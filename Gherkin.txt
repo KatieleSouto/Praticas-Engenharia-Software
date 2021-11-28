@@ -1,0 +1,56 @@
+#language: pt
+
+Funionalidade: Cadastrar Usuario Migrante
+	
+	Contexto:
+	Dado que o usuário do sistema esteja logado E possuia permissão 
+	de cadastro de usuario migrante
+
+	Cenario: Cadastrar Novo Usuario Migrante 
+	Dado que o sistema abriu o formulario de cadastro migrante
+	Quando o usuário clicar no botão Gravar
+	Então o sistema testa os campos 
+	E Grava os dados.
+
+	Cenario: Alterar Usuario Migrante Cadastrado 
+	Dado digitar o CPF do migrante 
+	E dado seja valido
+	Quando o usuario cadastrado clicar em botão salvar alterações
+	Então sistema testa dos campos 
+	E grava os dados. 
+	
+	Cenario: Excluir Usuario Migrante Cadastrado 
+	Dado digitar CPF do migrante 
+	E dado seja valido
+	Quando o usuario cadastrado clicar em botão excluir
+	E confirma migrante correto no botão confirma a exclusão.
+	Estão exclui o cadastro do migrante.
+
+Funcionalidade : Cadastrar Usuario Empresa 
+
+	Contexto:
+	Dado que o usuário do sistema esteja logado E possuia permissão 
+	de cadastro de usuario empresa 
+
+	Cenario: Cadastrar Novo Usuario Empresa 
+	Dado que o sistema abriu o formulario de cadastro Empresa
+	Quando o usuário clicar no botão Gravar
+	Então o sistema testa os campos 
+	E Grava os dados.
+
+	Cenario: Alterar Usuario Empresa Cadastrado 
+	Dado digitar o CNPJ da Empresa
+	E dado seja valido
+	Quando o usuario cadastrado clicar em botão salvar alterações
+	Então sistema testa dos campos 
+	E grava os dados. 
+	
+	Cenario: Excluir Usuario Empresa Cadastrado 
+	Dado digitar CNPJ da Empresa 
+	E dado seja valido
+	Quando o usuario cadastrado clicar em botão excluir
+	E confirma empresa correta no botão confirma a exclusão.
+	Estão exclui o cadastro da empresa. 
+
+ 
+	
